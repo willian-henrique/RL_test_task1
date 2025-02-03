@@ -103,17 +103,6 @@ static kpa_adc_relation adc_to_kPa_table[SIZE_OF_LOOP_UP_TABLE] = {
 { 1000, 14073 }
 };
 
-/**
- * This function convert ADC value to kPa pressure, it was optimized to work with 
- * 
- * @param ADC value
- * @param pointer to calculed scalar
- * @param pointer to calculed fraction 
- * @return The return value indicate the conversion state, where:
- *          0 - success.
- *          1 - ADC lower than accepted value.
- *          2 - ADC higher than accepted value.
- */
 uint_16 convert_adc_to_kPa(uint_16 adc, uint_16 *scalar, uint_16 *fractional){
 
     uint_16 pos_in_vector = 0xffff;

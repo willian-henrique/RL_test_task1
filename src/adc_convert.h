@@ -8,8 +8,8 @@
  * This function convert ADC value to kPa pressure, it was optimized to work with 
  * 
  * @param ADC value
- * @param pointer to calculed scalar
- * @param pointer to calculed fraction 
+ * @param scalar pointer to calculed scalar
+ * @param fractional pointer to calculed fraction 
  * @return The return value indicate the conversion state, where:
  *          0 - success.
  *          1 - ADC lower than accepted value.
